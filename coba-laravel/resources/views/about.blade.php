@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/about.css">
-    <title>Rahmat Blog | Home</title>
-</head>
-<body>
+@extends('layouts.main')
+
+@section('container')
     <h1>Halaman About</h1>
-</body>
-</html>
+    <h3>{{ $name }}</h3>
+    <p>{{ $email }}</p>
+    <img style="border-radius: 10px" src="img/{{ $image }}" alt="{{ $name }}" width="140" height="160" class="img-thumbnile rounded-circle">
+    <br>
+    <br>
+    <div class="btn btn-primary"><a style="color: white; text-decoration: none;" href="/">Home</a></div>
+@endsection
