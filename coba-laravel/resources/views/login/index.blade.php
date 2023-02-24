@@ -31,8 +31,8 @@
             </div>
         @endif
 
-        <main class="form-signin w-100 m-auto">
-            <h1 class="h3 mb-3 fw-normal text-center border-bottom p-2">Please Login</h1>
+        <main class="form-signin w-100 m-auto" style="padding-top: 3rem">
+            <h1 class="h3 mb-3 fw-normal text-center border-bottom p-2"><strong>Please Login</strong></h1>
             <form action="/login" method="post">
                 @csrf
 
@@ -84,7 +84,7 @@
 
             </form>
             <div class="loader"></div>
-            <small class="d-block text-center mt-3">Belum buat Account? <a href="/register" style="text-decoration: none">Buat Sekarang!</a></small>
+            <small class="d-block text-center mt-3">Belum membuat account? <a href="/register" style="text-decoration: none"><strong>Buat Sekarang!</strong></a></small>
 
           </main>
     </div>

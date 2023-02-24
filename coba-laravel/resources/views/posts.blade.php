@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    <h1 class="mb-3 text-center">{{ $title }}</h1>
+    <h1 class="mb-3 text-center" style="padding-top: 3.5rem">Semua Postingan Blog</h1>
 
 
     <div class="row justify-content-center mb-3">

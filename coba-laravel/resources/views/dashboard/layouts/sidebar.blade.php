@@ -7,8 +7,8 @@
           <a class="nav-link  {{ Request::is('dashboard') ? 'active' : '' }}"
           aria-current="page" href="/dashboard">
             <span data-feather="home" class="align-text-bottom"></span>
-            <i class="bi bi-house-door"></i>
-            Dashboard
+            <i class="fa-solid fa-house-user"></i>
+            <strong>Dashboard</strong>
           </a>
         </li>
 
@@ -16,11 +16,18 @@
         <li class="nav-item">
           <a class="nav-link  {{ Request::is('dashboard/posts*') ? 'active' : '' }}" href="/dashboard/posts">
             <span data-feather="file-text" class="align-text-bottom"></span>
-            <i class="bi bi-file-earmark-text""></i>
-            My Posts
+            <i class="fa-solid fa-file-lines"></i>
+            <strong>My Posts</strong>
           </a>
         </li>
+
+        {{-- back to home --}}
+        <li class="nav-item">
+            <a class="nav-link" href="/" style="text-decoration: underline"><i class="fa-solid fa-arrow-left"></i> <strong>HOME</strong></a>
+        </li>
       </ul>
+
+
 
       @can('admin')
       <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -36,6 +43,7 @@
         </li>
       </ul>
       @endcan
+
 
     </div>
   </nav>

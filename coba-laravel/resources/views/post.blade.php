@@ -2,10 +2,10 @@
 
 @section('container')
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row justify-content-center mb-5">
             <div class="col-md-8">
-             <h1 class="mb-3">{{ $post->title }}</h1>
+             <h1 class="mb-3 mt-5">{{ $post->title }}</h1>
 
              <p>By. <a href="/posts?author={{ $post->author->username }}" class="text-decoration-none">{{
              $post->author->name }}</a> in <a href="/posts?category={{ $post->category->slug }}"

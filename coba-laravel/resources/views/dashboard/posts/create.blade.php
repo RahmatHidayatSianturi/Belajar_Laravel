@@ -3,7 +3,7 @@
 @section('container')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap
         align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Create new post</h1>
+        <h1 class="h2"><strong>Create new post</strong></h1>
     </div>
 
 
@@ -52,7 +52,7 @@
         {{-- File Input --}}
         <div class="mb-3">
             <label for="image" class="form-label">Post Image <span><small><span style="color: red;">
-                *</span>disarankan post img yang horizontal atau lebih baik dalam bentuk persegi</small></span></label>
+                *</span>disarankan post img yang horizontal atau lebih baiknya lagi dalam bentuk <strong>persegi</strong></small></span></label>
             <img class="img-preview img-fluid mb-3 col-sm-8">
             <input class="form-control @error('image') is-invalid @enderror" type="file"
                 id="image" name="image" onchange="previewImage()">

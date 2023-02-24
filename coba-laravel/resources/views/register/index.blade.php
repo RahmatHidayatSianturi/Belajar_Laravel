@@ -1,10 +1,10 @@
 @extends('layouts.main')
 
 @section('container')
-<div class="row justify-content-center">
+<div class="row justify-content-center" style="padding-top: 4rem">
     <div class="col-md-5">
         <main class="form-registration w-100 m-auto">
-            <h1 class="h3 mb-3 fw-normal text-center">Registration Form</h1>
+            <h1 class="h3 mb-3 fw-normal text-center"><strong>Registration Form</strong></h1>
             <form action="/register" method="post">
                 @csrf
               <div class="form-floating">
@@ -49,7 +49,7 @@
 
 
 
-            <small class="d-block text-center mt-3">Already registered? <a href="/login">Login</a></small>
+            <small class="d-block text-center mt-3">Selesai Registrasi/Sudah memiliki account? <a href="/login" style="text-decoration: none"><strong>Login Sekarang!</strong></a></small>
 
           </main>
     </div>
